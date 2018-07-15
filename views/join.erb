@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+<head>
+        <meta charset="utf-8" />
+        <meta content="width=device-width" name="viewport" />
+	<title><%=@game.name%></title>
+</head>
+<body>
+	<h1><%=@game.name%></h1>
+	<form method="POST">
+		<label>Ouest <input type="text" name="west" 
+		    value="<%= @game.playername :west %>" /></label>
+		<input type="submit" value="Participer" />
+	</form>
+	<form method="POST">
+		<label>Nord <input type="text" name="north"
+		    value="<%= @game.playername :north %>" /></label>
+		<input type="submit" value="Participer" />
+	</form>
+	<form method="POST">
+		<label>Est <input type="text" name="east"
+		    value="<%= @game.playername :east %>" /></label>
+		<input type="submit" value="Participer" />
+	</form>
+	<form method="POST">
+		<label>Sud <input type="text" name="south"
+		    value="<%= @game.playername :south %>" /></label>
+		<input type="submit" value="Participer" />
+	</form>
+</body>
+</html>

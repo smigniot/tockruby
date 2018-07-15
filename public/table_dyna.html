@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en">
+    <head>
+        <meta charset="utf-8" />
+        <meta content="width=device-width" name="viewport" />
+        <title>Table de tock</title>
+        <script type="text/javascript" src="tockboard.js">
+        </script>
+        <style type="text/css">/* {{{ */
+            html,body { 
+                height: 100%; 
+                margin: 0px;
+                padding: 0px;
+                display: block;
+            }
+            svg.tockboard {
+                max-width: 100vw;
+                max-height: 100vh;
+                margin: 0px;
+                padding: 0px;
+                display:block;
+            }
+            circle.tockplace, circle.tockbase, circle.tocklane {
+                stroke:black;
+                stroke-width:1;
+            }
+            circle.tockplace, circle.tocklane {
+                fill:rgba(255,255,255,1);
+            }
+            text.tockplace, text.tockbase, text.tocklane {
+                text-anchor: middle;
+                dominant-baseline: central;
+            }
+            text.tockplace {
+                fill:#606060;
+            }
+            text.tockbase {
+                fill:white;
+                font-weight:bold;
+            }
+            g.tockcell {
+                cursor:cell;
+            }
+        /* }}} */</style>
+    </head>
+    <body onload="buildBoard(document.body)">
+    </body>
+</html>
+<!-- vim: set ts=4 sw=4 sts=4 expandtab foldmethod=marker : --> 

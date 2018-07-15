@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+<head>
+        <meta charset="utf-8" />
+        <meta content="width=device-width" name="viewport" />
+        <title>Parties de Tock</title>
+</head>
+<body>
+	<table>
+		<tbody>
+			<% @latest_games.each do |game| %>
+				<tr>
+					<td><%=game.name%></td>
+					<td><%=game.creation%></td>
+					<td><a href="<%=game.gid%>/join">join</a></td>
+				</tr>
+			<% end %>
+		</tbody>
+	</table>
+	<form method="POST">
+		<label>Nom <input type="text" name="gamename" /></label>
+		<input type="submit" value="Cr&eacute;er" />
+	</form>
+</body>
+</html>
